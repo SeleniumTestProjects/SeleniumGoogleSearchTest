@@ -33,7 +33,7 @@ public class SeleniumGoogleSearchTest {
 		System.out.println("Opening Google..");
 		driver.navigate().to(appURL);
 		WebElement java = driver.findElement(By.name("q"));
-		java.sendKeys("Selenium");
+		java.sendKeys("Jenkins");
 		java.submit();
 		System.out.println("Title of the page now is: " + driver.getTitle());
 		this.takeSnapShot(driver, "Gsearch.png") ;
